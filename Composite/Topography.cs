@@ -1,10 +1,11 @@
 namespace Composite;
 public abstract class Topography 
 {
-	public abstract double GetWaterProportion();
-	public double GetLandProportion()
+	public abstract double GetWaterRatio();
+	
+	public double GetLandRatio()
 	{
-		return 1 - this.GetWaterProportion();
+		return 1 - this.GetWaterRatio();
 	}
 
 	//code equals
