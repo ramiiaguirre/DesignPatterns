@@ -1,4 +1,6 @@
 namespace Composite;
+
+//Component
 public abstract class Topography 
 {
 	public abstract double GetWaterRatio();
