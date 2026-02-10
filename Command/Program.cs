@@ -1,4 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿// Program.cs is the Client
 using Command;
 
 Console.WriteLine("COMMAND PATTERN");
@@ -29,4 +29,5 @@ invoker.AddCommand(commandMayus);
 invoker.Execute();
 Console.WriteLine(textDocument.GetDataContent());
 invoker.Unexecute();
+
 Console.WriteLine(textDocument.GetDataContent());
