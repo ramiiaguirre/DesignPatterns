@@ -1,4 +1,4 @@
-﻿
+﻿//Shallow
 Robot AP235 = new Robot("Robot specialized in space exploration");
 Console.WriteLine(AP235.ToString());
 AP235.Execute();
@@ -14,3 +14,12 @@ IASubagent IACodeSessionB = IACodeSessionA.Clone() as IASubagent;
 Console.WriteLine(IACodeSessionA.ToString());
 Console.WriteLine(IACodeSessionB!.ToString());
 Console.WriteLine("Is it the same IA Session? => " + (IACodeSessionA == IACodeSessionB));
+
+//Deep
+ComplexRobot cRobot = new ComplexRobot("Fast robot specialized in space exploration");
+System.Console.WriteLine(cRobot.ToString());
+
+ComplexRobot cRobot2 = cRobot.Clone() as ComplexRobot;
+System.Console.WriteLine(cRobot2.ToString());
+
+System.Console.WriteLine($"Is it the same Engine? => {cRobot.Engine == cRobot2.Engine}");
